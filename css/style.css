@@ -1,0 +1,505 @@
+body {
+    background-color: #0A090A;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    margin-bottom: 30%;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+}
+
+.search-input {
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 5px;
+    /* Внутренний отсуп сверху */
+    padding-top: 12px;
+    /* Внутренний отсуп снизу */
+    padding-bottom: 12px;
+    /* Внутренний отсупы по краям */
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    color: #AEAEAE;
+    flex: 1;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+::-webkit-input-placeholder {
+    /* Chrome */
+    color: #AEAEAE;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #AEAEAE;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #AEAEAE;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #AEAEAE;
+    opacity: 1;
+}
+
+.search-button {
+    background-color: transparent;
+    /* прозраная кнопка */
+    border: none;
+    padding: 10 px 18px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* не растягивает фото, заполняет равномерно*/
+
+}
+
+.title {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+
+.title-en {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 38px;
+}
+
+.short-info {
+    margin-right: 3%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.tag {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.country {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-right: 33px;
+}
+
+.play {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.play:before {
+    margin-right: 15px;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.more {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.more:after {
+    margin-left: 15px;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/down.svg);
+    /*альтернатива чтобы сэкономить память transform: rotate(90deg)*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.content {
+    background: #FFFFFF;
+    border-radius: 3px;
+    color: #000000;
+    padding: 3% 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster {
+    display: block;
+    margin-top: -40%;
+    margin-bottom: 20px;
+}
+
+.button {
+    background: #FF8F27;
+    padding: 10px 44px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+}
+
+.actors-title {
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+    line-height: 150%;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.actors-list {
+    list-style: none;
+    padding-left: 15px;
+    text-decoration: underline;
+    margin: 0;
+    line-height: 150%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.tabs-item {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 4%;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tabs-item:not(:last-child) {
+    margin-right: 4.4%;
+}
+
+/* задать каждому эл справа отступ, но не тому который последний*/
+
+.full-info {
+    flex: 0.98
+}
+
+.full-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-content {
+    margin-right: 70px;
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+.tabs-item-active {
+    color: #FF8F27;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+}
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.subscribe-input {
+    background: rgba(196, 196, 196, 0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* Внутренний отсуп сверху */
+    padding-top: 12px;
+    /* Внутренний отсуп снизу */
+    padding-bottom: 12px;
+    /* Внутренний отсупы по краям */
+    padding-left: 18px;
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.subscribe-button {
+    border: none;
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    padding: 12px;
+}
+
+.subscribe-banner {
+    margin-bottom: 48px;
+}
+
+
+.feedback-form{
+    display: flex;
+    border: 2px solid #FF8F27 ; 
+    border-radius: 20px ;
+    border-style: dashed;
+
+   
+}
+
+.feedback-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #e7910f;
+    margin-bottom: 19px;
+    text-align-last: center; 
+}
+
+.feedback-input {
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    width: 90%;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.feedback-button {
+    border: none;
+    background: #FF8F27;
+    border-radius: 20px ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    width: 36%;
+    position: absolute;
+    color: black;
+  
+}
+
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .tabs-item {
+        font-size: 16px;
+    }
+    .feedback-button{
+        width: 43%;
+    }
+    .feedback-input{
+        width: 80%;
+        margin-bottom: 4%;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        /*если элементы не помещаются 
+        в одну строку надо их переносить*/
+    }
+
+    .tabs-item {
+        flex-basis: 16%;
+        /*группировка по колонкам*/
+        line-height: 2;
+    }
+
+    .full-content {
+        flex-wrap: wrap;
+    }
+
+    .tabs-content {
+        margin-bottom: 10%;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .actors-list {
+        font-size: 14px;
+    }
+    .feedback-button{
+        width: 73%;
+        margin-left: 0.8%;
+        
+     
+    }
+    .feedback-form{
+        width: 90%;
+    }
+   
+   
+
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .tabs-item {
+        flex-basis: 16%;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .feedback-button{
+        width: 67%; 
+    }
+    .feedback-input{
+        width: 87%;
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 5%;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .short-info {
+        margin-bottom: 5%;
+        margin-right: 0;
+    }
+
+    .actors-list,
+    .actors-title {
+        display: none;
+    }
+
+    .movie-info {
+        flex-wrap: wrap;
+    }
+
+    .play {
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+
+    .poster {
+        margin-top: -20%;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .tabs-item {
+        flex-basis: 1px;
+    }
+    .feedback-button{
+        width: 79%;
+    }
+}
